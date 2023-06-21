@@ -1,7 +1,7 @@
 import './App.css';
 import React from 'react';
 import { useState } from 'react';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Navbar from './components/Navbar.js';
 import Home from './components/Home.js';
 import Shop from './components/Shop.js';
@@ -71,7 +71,7 @@ function App() {
   }
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="App" ref={parent}>
         <Navbar showCart={showCart} toggleCart={toggleCart} itemsCounter={cartItems.length} />
 
@@ -85,7 +85,7 @@ function App() {
         <Cart showCart={showCart} toggleCart={toggleCart} cartItems={cartItems} changeQty={changeQty} />
         <ProductModal showModal={showModal} id={modalID} toggleProductModal={toggleProductModal} toggleCart={toggleCart} addToCart={addToCart}/>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
