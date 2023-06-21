@@ -1,0 +1,256 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.Header {
+  display: flex;
+  align-items: center;
+  width: calc(100vw - 40px);
+  justify-content: space-between;
+  height: 60px;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.Header a {
+  color: black;
+  text-decoration: none;
+}
+
+.Header a:visited {
+  color:black;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top:20px;
+}
+
+.content h3 {
+  margin:0;
+}
+
+.navbar {
+  display: flex;
+  align-items : center;
+  gap: 10px;
+}
+
+.navbar a:hover {
+  text-decoration:overline 4px black;
+}
+
+
+
+.home-img {
+  border-radius: 16px;
+}
+
+.title {
+  font-size: 48px;
+}
+
+.cart-icon {
+  position: relative;
+}
+
+.cart-icon img {
+  cursor: pointer;
+  text-align: center;
+  padding:10px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50px;
+  background-color: rgb(230, 230, 230);
+  overflow:visible;
+}
+
+.cart-icon:hover img {
+  background-color: rgb(210, 210, 210);
+}
+
+.item-counter {
+  cursor:pointer;
+  position: absolute;
+  color: white;
+  top: -4px;
+  right: -4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  border-radius: 100px;
+  height: 18px;
+  width: 18px;
+  font-size: 14px;
+}
+
+.Cart {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 320px;
+  background-color: rgba(255,255,255,0.7);
+  backdrop-filter: blur(4px);
+  
+}
+
+.cart-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255,255,255,0.8);
+  height: 10%;
+  width: 100%;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 6px;
+  margin-top: 14px;
+  overflow-y:auto;
+  font-size:16px;
+}
+
+.cart-items::-webkit-scrollbar {
+  width: 12px;
+}
+
+.cart-items::-webkit-scrollbar-track {
+  border-radius: 8px;
+  background-color: #e7e7e7;
+  border: 1px solid #cacaca;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+}
+
+.cart-items::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: #363636;
+}
+
+.cart-items .card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  padding-bottom: 6px;
+  border-bottom: solid 1px black;
+}
+
+.card-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.card-img {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+}
+
+.card-img img {
+  width: 80px;
+}
+
+.card-qty {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  gap: 8px;
+}
+
+.card-qty-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 10px;
+  font-size: 20px;
+  border: solid 1px black;
+  border-radius: 200px;
+  height: 17px;
+  width: 20px;
+  cursor: pointer;
+  user-select: none;
+  padding-bottom: 3px;
+}
+
+.plus:hover {
+  background-color: rgb(213, 255, 213);
+}
+
+.plus:active {
+  background-color: rgb(165, 255, 165);
+}
+
+.minus:hover {
+  background-color: rgb(255, 213, 213);
+}
+
+.minus:active {
+  background-color: rgb(255, 146, 146);
+}
+
+.card-price {
+  font-weight: bold;
+}
+
+.cart-menu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top:10px;
+}
+
+.cart-menu .total {
+  text-align:right;
+  margin-right:12px;
+}
+
+.proceed-btn {
+  align-self: center;
+  width:60%;
+  cursor: pointer;
+  user-select: none;
+  border: solid 1px;
+  padding: 4px;
+  padding-top: 2px;
+  padding-left:10px;
+  padding-right:10px;
+  border-radius: 200px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background-color: rgba(255,255,255,0.6);
+}
+
+.proceed-btn:hover {
+  text-decoration: underline 1px black;
+}
+
+.close-btn {
+  position: absolute;
+  top:14px;
+  right:14px;
+  cursor: pointer;
+}
+

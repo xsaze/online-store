@@ -1,0 +1,78 @@
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    backdrop-filter: blur(4px);
+    background-color: rgba(255,255,255,0.7);
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 1000;
+    font-size:18px;
+    cursor: pointer;
+    overflow-y: auto;
+}
+
+.modal::-webkit-scrollbar {
+    width: 12px;
+}
+  
+.modal::-webkit-scrollbar-track {
+    border-radius: 8px;
+    background-color: #e7e7e7;
+    border: 1px solid #cacaca;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+}
+  
+.modal::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: #363636;
+}
+
+.modal-image {
+    cursor:zoom-in;
+}
+
+.modal-image img {
+    border: solid 1px white;
+}
+
+.modal-image-big {
+    cursor: zoom-out;
+    padding-top: 300px;
+}
+
+.modal-desc {
+    cursor:text
+}
+
+.modal-price {
+    font-weight: bold;
+    cursor: text;
+}
+
+.modal-buy-btn {
+    cursor:pointer;
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 20px;
+    padding-left:6px;
+    padding-right:6px;
+    border: 1px solid;
+}
+
+.modal-buy-btn:hover {
+    transform: scale(1.2);
+}
+
+.modal-close-btn {
+    position: absolute;
+    top:10px;
+    right:10px;
+}
+
+.modal-close-btn img:hover {
+    transform: scale(1.2);
+}
